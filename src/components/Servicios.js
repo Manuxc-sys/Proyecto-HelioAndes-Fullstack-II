@@ -9,9 +9,9 @@ function Servicios() {
         <section id="servicios" className="py-5">
             <Container>
                 <div className="d-flex justify-content-between align-items-baseline mb-4">
-                    <h2 className="mb-0">Servicios</h2>
+                    <h2>Servicios</h2>
 
-                    <p className=" mb-0">Estudio energético, instalación certificada, Monitoreo y mantención</p>
+                    <p className=" text-muted">Estudio energético, instalación certificada, Monitoreo y mantención</p>
 
                 </div>
 

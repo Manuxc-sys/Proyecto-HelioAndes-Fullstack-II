@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Servicios from './components/Servicios';
+import Soluciones from './components/Soluciones';
+import CalculadoraIntegral from './components/CalculadoraIntegral';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <main className="main-content">
         <Hero />
         <Servicios />
+        <Soluciones />
+        <CalculadoraIntegral />
 
        
       </main>
