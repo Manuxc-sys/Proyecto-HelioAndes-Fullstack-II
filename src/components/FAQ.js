@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Accordion } from "react-bootstrap";
 function FAQ() {
     return (
         <section id="faq" className="py-5">
@@ -9,47 +9,42 @@ function FAQ() {
                     <p className="text-muted">Respuestas a las dudas más comunes</p>
                 </div>
 
-                <div className="accordion" id="faqAccordion">
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingOne">
-                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ¿Cuánto tiempo tarda la instalación de un sistema solar?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                            <div className="accordion-body">
-                                El tiempo de instalación varía según el tamaño del sistema, pero generalmente toma entre 1 a 3 días hábiles.
-                            </div>
-                        </div>
-                    </div>
+                <Accordion defaultActiveKey="0">
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>¿Qué garantía ofrecen los equipos?</Accordion.Header>
+                        <Accordion.Body>
+                            Ofrecemos garantía de fábrica: 10 años en paneles, 5 años en inversores, y 2 años en instalación eléctrica certificada por la SEC.
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingTwo">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                ¿Ofrecen financiamiento para los sistemas solares?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                            <div className="accordion-body">
-                                Sí, contamos con diversas opciones de financiamiento para facilitar la adquisición de tu sistema solar.
-                            </div>
+                    <Accordion.Item eventKey="1">
+                        <Accordion.Header>¿Incluyen mantención?</Accordion.Header>
+                        <Accordion.Body>
+                            Sí, incluimos una mantención preventiva anual en todos nuestros planes. También ofrecemos contratos de mantención extendida.
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                        </div>
-                    </div>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header>¿Cómo funciona el monitoreo?</Accordion.Header>
+                        <Accordion.Body>
+                            Instalamos un sistema de monitoreo en tiempo real accesible desde tu celular o computador. Podrás ver generación, ahorro y estado del sistema.
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingThree">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ¿Qué tipo de mantenimiento requiere un sistema solar?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                            <div className="accordion-body">
-                                Los sistemas solares requieren un mantenimiento mínimo, principalmente limpieza de paneles y revisiones periódicas para asegurar su óptimo funcionamiento.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <Accordion.Item eventKey="3">
+                        <Accordion.Header>¿Cuánto tiempo demora la instalación?</Accordion.Header>
+                        <Accordion.Body>
+                            Desde la aprobación del diseño, la instalación toma entre 3 y 7 días hábiles, dependiendo de la complejidad del sistema.
+                        </Accordion.Body>
+                    </Accordion.Item>
+
+                    <Accordion.Item eventKey="4">
+                        <Accordion.Header>¿Qué requisitos eléctricos debe cumplir mi propiedad?</Accordion.Header>
+                        <Accordion.Body>
+                            Debe contar con medidor bidireccional (lo gestionamos con la compañía distribuidora) y una instalación eléctrica en buen estado, conforme a norma SEC.
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
             </div>
         </section>
     );

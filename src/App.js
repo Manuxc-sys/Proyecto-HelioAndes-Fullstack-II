@@ -8,6 +8,7 @@ import CalculadoraIntegral from './components/CalculadoraIntegral';
 import Planes from './components/Planes';
 import Testimonios from './components/Testimonios';
 import FAQ from './components/FAQ';
+import Contacto from './components/Contacto';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Planes />
         <Testimonios />
         <FAQ/>
+        <Contacto/>
 
        
       </main>

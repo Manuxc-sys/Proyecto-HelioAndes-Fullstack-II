@@ -52,3 +52,7 @@
     transform: rotate(360deg);
   }
 }
+/* src/index.css */
+body {
+  background-color: #cee5f7; /* Celeste muy suave */
+}
