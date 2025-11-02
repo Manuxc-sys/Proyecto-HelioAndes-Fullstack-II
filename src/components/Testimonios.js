@@ -30,9 +30,9 @@ function Testimonios() {
                         <Card style={{ width: '18rem' }}>
                            
                             <Card.Body>
-                                <Card.Title>Instalación certificada</Card.Title>
+                                <Card.Title>Macarena, La Florida</Card.Title>
                                 <Card.Text>
-                                    Ejecutada por personal acreditado y normativa vigente.
+                                   Excelente asesoría y soporte durante todo el proceso.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -41,9 +41,9 @@ function Testimonios() {
                         <Card style={{ width: '18rem' }}>
                             
                             <Card.Body>
-                                <Card.Title>Monitoreo</Card.Title>
+                                <Card.Title>Alejandro, Puerto Varas</Card.Title>
                                 <Card.Text>
-                                    Seguimiento de rendimiento y alertas preventivas.
+                                      Mi sistema solar funciona de maravilla, ¡lo recomiendo totalmente!
                                 </Card.Text>
                             </Card.Body>
                         </Card>

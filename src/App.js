@@ -7,6 +7,7 @@ import Soluciones from './components/Soluciones';
 import CalculadoraIntegral from './components/CalculadoraIntegral';
 import Planes from './components/Planes';
 import Testimonios from './components/Testimonios';
+import FAQ from './components/FAQ';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <CalculadoraIntegral />
         <Planes />
         <Testimonios />
+        <FAQ/>
 
        
       </main>
