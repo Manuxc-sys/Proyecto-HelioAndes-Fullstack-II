@@ -1,6 +1,6 @@
 // src/components/CalculadoraIntegral.js
 import React, { useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 
 function CalculadoraIntegral() {
     // Estados del formulario
@@ -133,7 +133,7 @@ function CalculadoraIntegral() {
 
     return (
         <section id="demo-calculadora" className="py-5 bg-light">
-            <div className="container">
+            <Container>
                 <div className='d-flex justify-content-between align-items-baseline mb-4'>
                     <h3>DEMO calculadora integral</h3>
                 </div>
@@ -414,7 +414,7 @@ function CalculadoraIntegral() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

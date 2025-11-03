@@ -1,9 +1,9 @@
 import React from "react";
-import { Accordion } from "react-bootstrap";
+import { Accordion, Container } from "react-bootstrap";
 function FAQ() {
     return (
         <section id="faq" className="py-5">
-            <div className="container">
+            <Container>
                 <div className="d-flex justify-content-between align-items-baseline mb-4">
                     <h2>Preguntas Frecuentes (FAQ)</h2>
                     <p className="text-muted">Respuestas a las dudas más comunes</p>
@@ -45,7 +45,7 @@ function FAQ() {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </div>
+            </Container>
         </section>
     );
 }

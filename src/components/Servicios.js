@@ -8,7 +8,7 @@ function Servicios() {
 
         <section id="servicios" className="py-5">
             <Container>
-                <div className="d-flex justify-content-between align-items-baseline mb-4">
+                <div className="d-flex flex-column flex-md-row justify-content-between align-items-baseline mb-4">
                     <h2>Servicios</h2>
 
                     <p className=" text-muted">Estudio energético, instalación certificada, Monitoreo y mantención</p>
