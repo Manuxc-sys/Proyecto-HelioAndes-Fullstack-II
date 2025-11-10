@@ -24,7 +24,7 @@ function CalculadoraIntegral() {
     const [tipoPie, setTipoPie] = useState("porcentaje");
     const [valorPie, setValorPie] = useState(10);
 
-    // === CÁLCULOS DIRECTOS (sin funciones) ===
+    // CÁLCULOS DIRECTOS (sin funciones)
 
     // Potencia estimada
     const potenciaEstimada = (parseFloat(potenciaPanel) * parseInt(cantidadPaneles)) / 1000;
@@ -63,8 +63,8 @@ function CalculadoraIntegral() {
     if (region === "norte") baseEnvio = 9000;
     else if (region === "sur") baseEnvio = 10000;
     else if (region === "austral") baseEnvio = 15000;
-    const costoEnvioSinExprés = baseEnvio + parseFloat(pesoEnvio) * 700;
-    const costoEnvio = metodoEnvio === "expres" ? costoEnvioSinExprés * 1.2 : costoEnvioSinExprés;
+    const costoEnvioSinExpress = baseEnvio + parseFloat(pesoEnvio) * 700;
+    const costoEnvio = metodoEnvio === "expres" ? costoEnvioSinExpress * 1.2 : costoEnvioSinExpress;
 
     // Garantía (% sobre subtotalEquipos, antes de subsidio)
     let garantiaPorc = 0;
@@ -305,7 +305,7 @@ function CalculadoraIntegral() {
                                         onChange={(e) => setMetodoEnvio(e.target.value)}
                                     >
                                         <option value="estandar">Estándar (x1.00)</option>
-                                        <option value="expres">Exprés (x1.20)</option>
+                                        <option value="express">Express (x1.20)</option>
                                     </select>
                                 </div>
                                 <div className="col-md-6">
@@ -365,7 +365,7 @@ function CalculadoraIntegral() {
                             {/* Advertencia dinámica */}
                             {mostrarAdvertencia && (
                                 <div className="alert alert-warning small">
-                                    ⚠️ Recomendado considerar almacenamiento para estabilidad del sistema.
+                                     Recomendado considerar almacenamiento para estabilidad del sistema.
                                 </div>
                             )}
 
