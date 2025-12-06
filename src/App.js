@@ -14,12 +14,10 @@ import Testimonios from './components/Testimonios';
 import FAQ from './components/FAQ';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
-
-// Admin: componentes completos (navbar + sidebar + contenido)
-import ServiciosAdmin from './components/adminLTE/Servicios';      // ← Nuevo
-import ServicioDetail from './components/adminLTE/ServicioDetail'; // ← Nuevo
-import PlanesAdmin from './components/adminLTE/Planes';          // ← Crearás después
-import PlanDetail from './components/adminLTE/PlanDetail';       // ← Crearás después
+import ServiciosAdmin from './components/adminLTE/Servicios';     
+import ServicioDetail from './components/adminLTE/ServicioDetail';
+import PlanesAdmin from './components/adminLTE/Planes';          
+import PlanDetail from './components/adminLTE/PlanDetail';     
 
 function App() {
   return (
