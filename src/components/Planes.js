@@ -11,11 +11,10 @@ function Planes() {
       .then(response => setPlanes(response.data))
       .catch(error => {
         console.error('Error al cargar planes:', error);
-        // No se hace nada → no hay fallback
+       
       });
   }, []);
 
-  // Beneficios fijos por ID (no vienen en Mockoon)
   const getBeneficios = (id) => {
     const beneficiosPorPlan = {
       1: ["Estudio energético", "Instalación certificada", "Monitoreo básico"],
@@ -25,7 +24,7 @@ function Planes() {
     return beneficiosPorPlan[id] || [];
   };
 
-  // Título fijo por ID (rango de potencia)
+
   const getRangoPotencia = (id) => {
     const rangos = {
       1: "3–5 kW",

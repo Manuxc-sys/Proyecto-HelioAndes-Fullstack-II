@@ -11,11 +11,10 @@ function Servicios() {
       .then(response => setServicios(response.data))
       .catch(error => {
         console.error('Error al cargar servicios:', error);
-        // No se muestra nada si falla → cumple con "no usar fallback"
+        
       });
   }, []);
 
-  // Mapeo fijo de imágenes por ID (no viene en Mockoon)
   const getImagen = (id) => {
     const imagenes = {
       1: 'analisis.png',
